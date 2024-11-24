@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Función para limpiar los campos del formulario después de enviarlo
+        function clearForm(formId) {
+            const form = document.getElementById(formId);
+            form.reset();
+        }
+    </script>
+</head>
+<body>
+   <form action="register.php" method="post">
+    <h1>Registrarse</h1>
+       <center><img src="registrarse.jpg" alt="login" width="40%" height="40%"></center>
+        <label for="username">Usuario:</label>
+        <input type="text" name="username" required><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" required><br>
+        <button type="submit">Registrarse</button>
+    </form>
+
+    <div class="divider"></div>
+    
+    <form action="login.php" method="post">
+      <h1>Iniciar Sesión</h1>
+       <center><img src="login.jpg" alt="login" width="40%" height="40%"></center>
+        <label for="username">Usuario:</label>
+        <input type="text" name="username" required><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" required><br>
+        <button type="submit">Ingresar</button>
+    </form>
+    
+</body>
+</html>
